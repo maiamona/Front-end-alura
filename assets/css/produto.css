@@ -1,0 +1,84 @@
+/* E o que é o Efeito Parallax?
+Na computação gráfica, o efeito Parallax costuma ser simulado com a técnica de mover imagens de fundo em uma velocidade mais lenta do que as imagens de primeiro plano, criando no nosso cérebro a ilusão de profundidade em planos 2D.
+
+Na web é usado na maioria das vezes em sites de uma única página, que envolve o fundo se movendo em um ritmo mais lento em primeiro plano, criando um efeito 3D quando você rolar a página. Ou seja, o parallax é uma técnica que causa uma ilusão de profundidade nas interfaces.
+
+Mas é importante saber usar com cautela, muitas vezes o efeito pode ficar exagerado e forçado. Mas quando usado com moderação pode proporcionar um bom e sutil elemento de profundidade. */
+
+.produto{
+    display: flex;
+    height: calc(100vh - 4.25rem);
+    overflow: hidden;
+}
+
+.produto__foto{
+    width: 40%;
+    height: 100%;
+    background-image: url(../img/gato2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* background-position: -22% top; */
+    transform: translateZ(-1px) translate(-75%, 25%) scale(2.6);
+    z-index: -1;
+}
+
+.produto__descricao{
+    width: 60%;
+    padding-top: 3rem;
+    box-sizing: border-box;
+    color: var(--cinza);
+    background-color: var(--branco);
+}
+
+.produto__marca{
+    text-transform: uppercase;
+    font-size: 11.5rem;
+    font-weight: 800;
+    color: var(--rosa-claro);
+    letter-spacing: 0.5rem;
+    line-height: 9rem;
+}
+
+.produto__divisao{
+    padding-left: 1rem;
+    position: relative;
+}
+
+.produto__preco{
+    font-size: 1.375rem;
+    font-weight: 800;
+    letter-spacing: 0.125rem;
+    margin-bottom: 2.5rem;
+}
+
+.produto__nome{
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+    letter-spacing: 0.125rem;
+    width: 31.875rem;
+}
+
+.produto__texto{
+    letter-spacing: 0.125rem;
+    width: 31.875rem; 
+    line-height: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.produto__comprar{
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+    border: none;
+    color: var(--branco);
+    font-weight: 900;
+    letter-spacing: 0.25rem;
+    font-family: inherit; /*'inherit' - herda a 'font-family' do elemento pai dele*/
+    text-transform: uppercase;
+    border-radius: 35px;
+    background-color: var(--laranja);
+    min-width: 10.75rem;
+    padding: 1.25rem 1rem;
+    box-sizing: border-box;
+}

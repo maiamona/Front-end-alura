@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produto | Gatito</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/cabecalho.css " />
+    <link rel="stylesheet" href="./assets/css/produto.css " />
+    <link rel="stylesheet" href="./assets/css/outros-produtos.css " />
+    <link rel="stylesheet" href="./assets/css/carousel.css" />
+    <link rel="stylesheet" href="./assets/css/rodape.css" />
+  </head>
+  <body>
+    <header class="cabecalho container">
+      <div class="cabecalho__divisao">
+        <img
+          src="./assets/img/gato1.svg"
+          alt="logo gatito"
+          class="cabecalho__logo"
+          style="width: 79px"
+        />
+        <h1 class="cabecalho__titulo">gatito</h1>
+      </div>
+      <nav>
+        <ul class="cabecalho__navegacao">
+          <li class="cabecalho__item cabecalho__item--ativo">
+            <a href="#">home</a>
+          </li>
+          <li class="cabecalho__item"><a href="#">sobre</a></li>
+          <li class="cabecalho__item"><a href="#">contacto</a></li>
+          <li class="cabecalho__item">
+            <a href="#" aria-label="busca"
+              ><img
+                src="./assets/img/lupa.svg"
+                alt="icone de busca"
+                style="width: 37px"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="produto">
+        <div class="produto__foto"></div>
+        <article class="produto__descricao container">
+          <h2 class="produto__marca">GATITO</h2>
+          <div class="produto__divisao">
+            <p class="produto__preco">R$ 128,90</p>
+            <h3 class="produto__nome">
+              GATITO PRO PLAN SENSITIVE SKIN & STOMACH
+            </h3>
+            <p class="produto__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet illo quo accusamus saepe soluta, optio iure. Odit veritatis culpa officiis eaque est voluptas, commodi dolor eius saepe voluptates excepturi rem.</p>
+            <p class="produto__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium minus porro in impedit possimus, quaerat nihil laborum debitis iure quia reprehenderit deserunt quisquam, rerum saepe at quasi amet quo perspiciatis.</p>
+            <p class="produto__texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, enim quis. Excepturi asperiores odio, aspernatur maxime numquam totam ipsum quisquam! Dicta cupiditate aliquam, nam distinctio exercitationem fuga amet modi sit.</p>
+            <button class="produto__comprar">COMPRAR</button>
+          </div>
+        </article>
+      </section>
+      <section class="outros-produtos">
+        <h2 class="outros-produtos__titulo">nossos outros produtos</h2>
+        <article class="carousel">
+          <button class="carousel__botao carousel__botao--anterior" data-anterior aria-label="Botão de voltar"></button>
+          <button class="carousel__botao carousel__botao--proximo" data-proximo aria-label="Botão de avançar"></button>
+          <ul class="carousel__lista-produtos" data-lista-produtos>
+            <a href="#" class="carousel__produto">
+              <li class="carousel__imagem-container"><img src="./assets/img/5.png" alt="" class="carousel__imagem"></li>
+            </a><a href="#" class="carousel__produto">
+              <li class="carousel__imagem-container"><img src="./assets/img/4.png" alt="" class="carousel__imagem"></li>
+            </a><a href="#" class="carousel__produto">
+              <li class="carousel__imagem-container"><img src="./assets/img/3.png" alt="" class="carousel__imagem"></li>
+            </a><a href="#" class="carousel__produto">
+              <li class="carousel__imagem-container"><img src="./assets/img/2.png" alt="" class="carousel__imagem"></li>
+            </a><a href="#" class="carousel__produto">
+              <li class="carousel__imagem-container"><img src="./assets/img/1.png" alt="" class="carousel__imagem"></li>
+            </a>
+          </ul>
+          <div class="carousel__indicadores" data-navegacao>
+            <button class="carousel__indicador carousel__indicador--ativo" data-indicador='0' aria-label="Slide 1"></button>
+            <button class="carousel__indicador" data-indicador='1' aria-label="Slide 2"></button>
+            <button class="carousel__indicador" data-indicador='2' aria-label="Slide 3"></button>
+            <button class="carousel__indicador" data-indicador='3' data-indicador='0' aria-label="Slide 4"></button>
+            <button class="carousel__indicador" data-indicador='4' aria-label="Slide 5"></button>
+          </div>
+
+        </article>
+      </section>
+    </main>
+    <footer class="rodape container">
+      <div class="rodape__divisao">
+        <img src="assets/img/gato1.svg"  style="width: 79px" alt="Logo Gatito" class="rodape__logo">
+        <h2 class="rodape__titulo">gatito</h2>
+      </div>
+      <nav>
+        <ul class="rodape__navegacao">
+          <li class="rodape__item"><a href="#">sobre</a></li>
+          <li class="rodape__item"><a href="#">contacto</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="./assets/js/index.js" type="module"></script>
+    <!-- <script src="./assets/js/carousel.js" type="module"></script> -->
+  </body>
+</html>
